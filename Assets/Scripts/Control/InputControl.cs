@@ -1,16 +1,13 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputControl : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Vector2 MovementVector {  get; private set; }
+    private void OnMove(InputValue inputValue)
     {
-        
+        MovementVector= inputValue.Get<Vector2>();
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
