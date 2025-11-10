@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 687802240}
   - component: {fileID: 687802239}
   - component: {fileID: 687802238}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,6 +968,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LittleKitty
       objectReference: {fileID: 0}
+    - target: {fileID: 1198838559227160188, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077652876796799656, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823174781297994559, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3551244357137259851, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -979,6 +991,10 @@ PrefabInstance:
     - target: {fileID: 3842563459556978823, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
       propertyPath: jumpCooldown
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842563459556978823, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
+      propertyPath: playerHeight
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3842563459556978823, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
       propertyPath: airMultiplier
@@ -1047,6 +1063,10 @@ PrefabInstance:
     - target: {fileID: 7370247353578725289, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713478211172397109, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1332482060385537066, guid: 831236e0413cc814cbb917bd35b2af1d, type: 3}
