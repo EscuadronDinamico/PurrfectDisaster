@@ -3,7 +3,9 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
 
-    [SerializeField] private AudioSource musicSource, sfxSoundSource;
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource[] sfxSoundSource;
+    [SerializeField] private static int indiceSFXSource;
 
     public static AudioManager Instance { get; private set; }
 
@@ -11,16 +13,17 @@ public class AudioManager : MonoBehaviour
     {
         if(Instance != null && Instance != this)
         {
-            Destroy(this);
+            Destroy(gameObject);
 
 
         }
         else
         {
             Instance = this;
-            DontDestroyOnLoad(this);
+            DontDestroyOnLoad(gameObject);
         }
     }
+
 
     public void PlayMusic(AudioClip clip)
     {
@@ -28,9 +31,15 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlaySFX(AudioClip clip, Vector3 ubicacionSFX)
     {
-        sfxSoundSource.PlayOneShot(clip);
+        indiceSFXSource=indiceSFXSource%sfxSoundSource.Length;
+
+        sfxSoundSource[indiceSFXSource].transform.position = ubicacionSFX;
+
+        sfxSoundSource[indiceSFXSource].PlayOneShot(clip);
+
+        indiceSFXSource++;
     }
 
 
