@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 9415655}
   - component: {fileID: 9415654}
   - component: {fileID: 9415653}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,67 +228,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &523524705
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 559032203806186963, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: playerHeight
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014286673867993580, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_Name
-      value: LittleKitty
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8852324955140798014, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a1f0a84b7a5db0d49b2e8ac8ce7e0932, type: 3}
 --- !u!1 &1967097114
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,10 +349,71 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1001 &2598786625107157097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6739020702178120310, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: WhatIsGround.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7490395636488387857, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_Name
+      value: LittleKitty(final)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1967097116}
-  - {fileID: 523524705}
   - {fileID: 9415656}
+  - {fileID: 2598786625107157097}
