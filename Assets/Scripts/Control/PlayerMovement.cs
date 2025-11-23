@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -52,7 +53,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MovePlayer()
     {
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        Vector3 adelante = orientation.forward;
+        adelante.y = 0;
+        Vector3 derecha = orientation.right;
+        derecha.y = 0;
+        moveDirection = adelante * verticalInput + derecha * horizontalInput;
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 

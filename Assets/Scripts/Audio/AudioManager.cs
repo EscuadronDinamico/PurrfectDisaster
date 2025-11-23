@@ -25,19 +25,48 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public void PlayMusic(AudioClip clip)
+    public void PlayMusic(AudioStorageSOScript soundMusic)
     {
-        musicSource.clip = clip;
+        if(!soundMusic.Es3D)musicSource.spatialBlend = 0;
+        else musicSource.spatialBlend = 1;
+        
+        
+        AudioClip audioAReproducir = soundMusic.ReproducirAleatorio();
+        musicSource.clip = audioAReproducir;
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip, Vector3 ubicacionSFX)
+    public void PlaySFX(AudioStorageSOScript soundSFX, Vector3 ubicacionSFX)
     {
-        indiceSFXSource=indiceSFXSource%sfxSoundSource.Length;
+
+
+        AudioClip audioAReproducir = soundSFX.ReproducirAleatorio();
+        indiceSFXSource = indiceSFXSource % sfxSoundSource.Length;
+
+
+        if (!soundSFX.Es3D) sfxSoundSource[indiceSFXSource].spatialBlend = 0;
+        else sfxSoundSource[indiceSFXSource].spatialBlend = 1;
+        
 
         sfxSoundSource[indiceSFXSource].transform.position = ubicacionSFX;
 
-        sfxSoundSource[indiceSFXSource].PlayOneShot(clip);
+        sfxSoundSource[indiceSFXSource].PlayOneShot(audioAReproducir);
+
+        indiceSFXSource++;
+    }
+    public void PlaySFX(AudioStorageSOScript soundSFX)
+    {
+
+
+        AudioClip audioAReproducir = soundSFX.ReproducirAleatorio();
+
+        indiceSFXSource = indiceSFXSource % sfxSoundSource.Length;
+
+        if (!soundSFX.Es3D) sfxSoundSource[indiceSFXSource].spatialBlend = 0;
+        else sfxSoundSource[indiceSFXSource].spatialBlend = 1;
+        
+
+        sfxSoundSource[indiceSFXSource].PlayOneShot(audioAReproducir);
 
         indiceSFXSource++;
     }
