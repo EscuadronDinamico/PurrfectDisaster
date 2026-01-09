@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 moveDirection;
     Rigidbody rb;
+
+    [SerializeField] private Transform visualesGato;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -58,13 +60,17 @@ public class PlayerMovement : MonoBehaviour
         Vector3 derecha = orientation.right;
         derecha.y = 0;
         moveDirection = adelante * verticalInput + derecha * horizontalInput;
+        visualesGato.forward = new Vector3(orientation.forward.x, 0, orientation.forward.z);
+
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
     }
     private void SpeedControl()
     {
+
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
 
         if (flatVel.magnitude > moveSpeed)
         {

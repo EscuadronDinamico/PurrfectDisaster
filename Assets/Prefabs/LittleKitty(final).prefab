@@ -34,6 +34,7 @@ Transform:
   m_Children:
   - {fileID: 8599757804106331936}
   - {fileID: 5804849384024743746}
+  - {fileID: 9091873244083060661}
   m_Father: {fileID: 7332632968076858668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8148806396659403846
@@ -436,8 +437,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5896139195640433922}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25340125, y: 0.00000005240782, z: -0.000000013728282, w: 0.9673613}
-  m_LocalPosition: {x: 0, y: 1.75, z: -4}
+  m_LocalRotation: {x: 0.16189457, y: -0.040411532, z: 0.006635585, w: 0.985958}
+  m_LocalPosition: {x: 1.52, y: 1.5500002, z: -1.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -705,7 +706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6561521041251520222}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -713,7 +714,7 @@ Transform:
   - {fileID: 5377685559467155760}
   - {fileID: 2365782206996027423}
   - {fileID: 4197558039272370791}
-  m_Father: {fileID: 7332632968076858668}
+  m_Father: {fileID: 6002171747733278810}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7490395636488387857
 GameObject:
@@ -751,7 +752,6 @@ Transform:
   - {fileID: 4474184995006145731}
   - {fileID: 8342595274721736692}
   - {fileID: 4509319716912107903}
-  - {fileID: 9091873244083060661}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6655819194841557220
@@ -800,6 +800,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   orientation: {fileID: 3525489346215261066}
+  visualesGato: {fileID: 6002171747733278810}
 --- !u!1 &8021844433146331974
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,7 +813,6 @@ GameObject:
   - component: {fileID: 6059750642396978476}
   - component: {fileID: 8007160763874766655}
   - component: {fileID: 7945299429735465573}
-  - component: {fileID: 2973605793186416182}
   - component: {fileID: 4044688386886914019}
   m_Layer: 6
   m_Name: ThirdPersonCam
@@ -830,7 +830,7 @@ Transform:
   m_GameObject: {fileID: 8021844433146331974}
   serializedVersion: 2
   m_LocalRotation: {x: 0.25340125, y: 0.000000052407824, z: -0.000000013728283, w: 0.9673613}
-  m_LocalPosition: {x: 0, y: 2.25, z: -4}
+  m_LocalPosition: {x: 0, y: 9, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -971,23 +971,6 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
---- !u!114 &2973605793186416182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8021844433146331974}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a076c17fe76165e4f8ed21498b877bf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Easing: 0
-  Modifiers: []
-  references:
-    version: 2
-    RefIds: []
 --- !u!114 &4044688386886914019
 MonoBehaviour:
   m_ObjectHideFlags: 0
