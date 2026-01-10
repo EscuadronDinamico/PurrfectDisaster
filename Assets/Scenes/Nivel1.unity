@@ -572,7 +572,7 @@ MonoBehaviour:
   CameraSide: 1
   CameraDistance: 0.77
   AvoidObstacles:
-    Enabled: 0
+    Enabled: 1
     CollisionFilter:
       serializedVersion: 2
       m_Bits: 1
@@ -634,11 +634,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 924856460}
   cameraPivot: {fileID: 185014379}
-  horizontalSensitivity: 0.5
-  verticalSensitivity: 0.2
+  horizontalSensitivity: 1.07
+  verticalSensitivity: 0.57
   minVerticalAngle: -10
   maxVerticalAngle: 45
-  invertVertical: 0
+  invertVertical: 1
+  velocidadCamara: 2
   playerInput: {fileID: 1436865605}
 --- !u!1001 &1716052984
 PrefabInstance:
@@ -900,7 +901,9 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 7.204948e-16
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2530384398008786106, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+    - {fileID: 2913674441129460613, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7332632968076858668, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
@@ -913,36 +916,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7490395636488387857, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1436865605}
-    - targetCorrespondingSourceObject: {fileID: 5896139195640433922, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1937515313}
   m_SourcePrefab: {fileID: 100100000, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
---- !u!1 &1937515306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5896139195640433922, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
-  m_PrefabInstance: {fileID: 1716052984}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &1937515313
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937515306}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

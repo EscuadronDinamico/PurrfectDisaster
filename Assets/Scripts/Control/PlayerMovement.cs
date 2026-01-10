@@ -24,8 +24,11 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
 
     [SerializeField] private Transform visualesGato;
+
     private void Start()
     {
+
+
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
