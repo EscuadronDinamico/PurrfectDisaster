@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
 
+
+    private Keyboard keyboard;
+
     public float groundDrag;
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask WhatIsGround;
-    bool grounded;
+    private bool isGrounded;
 
     public Transform orientation;
 
@@ -35,15 +39,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, WhatIsGround);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, WhatIsGround);
 
         MyInput();
         SpeedControl();
 
-        if (grounded)
+        if (isGrounded)
             rb.linearDamping = groundDrag;
         else
             rb.linearDamping = 0;
+
+
+
     }
     private void FixedUpdate()
     {
