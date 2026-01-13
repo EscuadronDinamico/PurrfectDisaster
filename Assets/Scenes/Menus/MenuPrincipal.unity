@@ -2881,7 +2881,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1664990197}
         m_TargetAssemblyTypeName: MenuOpciones, Assembly-CSharp
-        m_MethodName: CambiarBrillo
+        m_MethodName: CambiarBrilloOpciones
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3644,6 +3644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuOpciones: {fileID: 1254253090}
   volumenSlider: {fileID: 573705001}
+  brilloSlider: {fileID: 1148747898}
   volumeMixer: {fileID: 24100000, guid: b009f1f381cb2864383a0c60aa689f1c, type: 2}
 --- !u!1 &1761403346
 GameObject:

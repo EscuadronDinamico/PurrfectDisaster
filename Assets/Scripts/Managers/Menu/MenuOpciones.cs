@@ -39,7 +39,7 @@ public class MenuOpciones : MonoBehaviour
 
     }
 
-    public void CambiarBrillo()
+    public void CambiarBrilloOpciones()
     {
         PostProcessingManager.instance.CambiarBrillo(brilloSlider.value);
     }
