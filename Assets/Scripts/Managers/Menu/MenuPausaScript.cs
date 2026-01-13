@@ -7,6 +7,9 @@ public class MenuPausaScript : MonoBehaviour
 
     [SerializeField] private GameObject menuPausa;
 
+    [SerializeField] private GameObject menuOpciones;
+
+
 
     public void Reanudar()
     {
@@ -16,6 +19,18 @@ public class MenuPausaScript : MonoBehaviour
     public void Salir()
     {
         SceneManager.LoadScene("MenuPrincipal");
+        Time.timeScale = 1f;
+    }
+
+    public void ReiniciarNivel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+    }
+
+    public void AbrirOpciones()
+    {
+        menuOpciones.SetActive(true);
     }
 
 }
