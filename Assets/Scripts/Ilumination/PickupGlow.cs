@@ -9,6 +9,7 @@ public class PickupGlow : MonoBehaviour
 
     private Material material;
     private float t;
+    private bool collected = false;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class PickupGlow : MonoBehaviour
 
     void Update()
     {
+        if (collected) return;
+
         t += Time.deltaTime * pulseSpeed;
 
         float intensity = Mathf.Lerp(
@@ -28,5 +31,24 @@ public class PickupGlow : MonoBehaviour
         );
 
         material.SetColor("_EmissionColor", glowColor * intensity);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Collect();
+        }
+    }
+
+    void Collect()
+    {
+        collected = true;
+
+        // Apaga el brillo
+        material.SetColor("_EmissionColor", Color.black);
+        // - enviar evento
+
+        Destroy(gameObject);
     }
 }
