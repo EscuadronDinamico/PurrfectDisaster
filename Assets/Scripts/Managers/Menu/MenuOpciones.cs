@@ -14,11 +14,6 @@ public class MenuOpciones : MonoBehaviour
 
     [SerializeField] private AudioMixer volumeMixer;
 
-    private void Start()
-    {
-        
-    }
-
 
     public void CerrarOpciones()
     {
