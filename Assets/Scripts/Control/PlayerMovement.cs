@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Transform visualesGato;
 
+    [SerializeField] private Animator animatorGato;
+
     private void Start()
     {
 
@@ -64,9 +66,11 @@ public class PlayerMovement : MonoBehaviour
         derecha.y = 0;
         moveDirection = adelante * verticalInput + derecha * horizontalInput;
         visualesGato.forward = new Vector3(orientation.forward.x, 0, orientation.forward.z);
+        float velocidad = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z).magnitude;
 
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        animatorGato.SetFloat("velocidad", velocidad);
 
     }
     private void SpeedControl()
