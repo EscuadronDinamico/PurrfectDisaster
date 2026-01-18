@@ -104,7 +104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4197558039272370791
 Transform:
   m_ObjectHideFlags: 0
@@ -188,12 +188,12 @@ GameObject:
   - component: {fileID: 7879333603455303615}
   - component: {fileID: 7910928941340351877}
   m_Layer: 6
-  m_Name: ThirdPersonCam (1)
+  m_Name: ThirdPersonCamShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7240952668024236625
 Transform:
   m_ObjectHideFlags: 0
@@ -222,8 +222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
-    m_Value: 0
+    Enabled: 1
+    m_Value: 11
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
@@ -352,7 +352,7 @@ Transform:
   m_GameObject: {fileID: 4210979267884908810}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.02, y: 0.14, z: 0}
+  m_LocalPosition: {x: 0.02, y: 0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -377,10 +377,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.14674473
-  m_Height: 0.77516145
+  m_Radius: 0.35394776
+  m_Height: 1.0951543
   m_Direction: 1
-  m_Center: {x: -0.024459958, y: -0.017580748, z: -0.011446387}
+  m_Center: {x: -0.024459958, y: 0.14241576, z: -0.061701506}
 --- !u!1 &5376419573982048373
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,8 +441,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5896139195640433922}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1619052, y: -0.03879521, z: 0.0063701835, w: 0.9860229}
-  m_LocalPosition: {x: 0, y: 1.1800003, z: -2.77}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7599999, y: 0.42000008, z: -1.8499999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -599,7 +599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5377685559467155760
 Transform:
   m_ObjectHideFlags: 0
@@ -713,6 +713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7332632968076858668}
   - component: {fileID: 6655819194841557220}
+  - component: {fileID: 4100596582600927221}
   - component: {fileID: 6739020702178120310}
   - component: {fileID: 2672344893203176123}
   - component: {fileID: 5175049516341665598}
@@ -771,6 +772,20 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &4100596582600927221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7490395636488387857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92e29fe40ed0454287d01b8e407649b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 5175049516341665598}
+  menuPausa: {fileID: 0}
 --- !u!114 &6739020702178120310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,9 +798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b68256f027967de498ab14df0d35021a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.4
-  velocidadLimite: 0
-  groundDrag: 4
+  moveSpeed: 1.25
+  velocidadLimite: 1
+  groundDrag: 2
   playerHeight: 4
   WhatIsGround:
     serializedVersion: 2
@@ -812,9 +827,9 @@ MonoBehaviour:
   smoothTime: 0.12
   minVerticalAngle: -5
   maxVerticalAngle: 40
-  invertVertical: 1
-  OverTheShoulderCamera: {fileID: 0}
-  camara3raPersona: {fileID: 0}
+  invertVertical: 0
+  OverTheShoulderCamera: {fileID: 875941675232568920}
+  camara3raPersona: {fileID: 6059750642396978476}
   playerInput: {fileID: 5175049516341665598}
 --- !u!114 &5175049516341665598
 MonoBehaviour:
@@ -894,8 +909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Priority:
-    Enabled: 0
-    m_Value: 0
+    Enabled: 1
+    m_Value: 10
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
