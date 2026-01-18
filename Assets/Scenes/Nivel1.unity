@@ -1838,6 +1838,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3624750789314004310, guid: 1390a921d4a20fb47bff1a0b2fb3ebdd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.023
+      objectReference: {fileID: 0}
     - target: {fileID: 4296483087104492871, guid: 1390a921d4a20fb47bff1a0b2fb3ebdd, type: 3}
       propertyPath: m_Name
       value: CasaPrefabColls
@@ -4799,11 +4803,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1443005788}
   menuPausa: {fileID: 416490947}
---- !u!143 &1443005794 stripped
-CharacterController:
-  m_CorrespondingSourceObject: {fileID: 154052822593598721, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
-  m_PrefabInstance: {fileID: 1716052984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1451365368
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,7 +5890,7 @@ PrefabInstance:
     - target: {fileID: 6739020702178120310, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
       propertyPath: controller
       value: 
-      objectReference: {fileID: 1443005794}
+      objectReference: {fileID: 0}
     - target: {fileID: 6739020702178120310, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
       propertyPath: groundDrag
       value: 2
