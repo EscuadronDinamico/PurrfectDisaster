@@ -1,10 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InteractionPromptUI : MonoBehaviour
 {
     [SerializeField] private GameObject root; 
-    [SerializeField] private Text label;
+    [SerializeField] private TextMeshProUGUI label;
     private void Awake()
     {
         if (root) root.SetActive(false);

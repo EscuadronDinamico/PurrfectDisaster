@@ -80,6 +80,7 @@ public class PlayerInteraction : MonoBehaviour
                 break;
             case ActionType.Interact:
                 ia.onInteract?.Invoke();
+                print("Ejecutando interacción genérica");
                 break;
         }
 
@@ -103,6 +104,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void ExecutePush(InteractableAction ia)
     {
+        print("Ejecutando empuje");
         var rb = ia.GetPushBody();
         if (!rb) return;
 
@@ -115,6 +117,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private IEnumerator ExecuteAutoJump(InteractableAction ia)
     {
+        print("Ejecutando salto automático");
         if (!ia.jumpTarget) yield break;
 
         Vector3 start = transform.position;
@@ -130,9 +133,10 @@ public class PlayerInteraction : MonoBehaviour
             t += Time.deltaTime;
             float norm = Mathf.Clamp01(t / duration);
 
+            //print("el inicio es "+start+" el final es "+end+" y lleva un porcentaje de "+norm);
             Vector3 pos = Vector3.Lerp(start, end, norm);
-            float arc = Mathf.Sin(norm * Mathf.PI) * ia.jumpArcHeight;
-            pos.y += arc;
+            //float arc = Mathf.Sin(norm * Mathf.PI) * ia.jumpArcHeight;
+           // pos.y += arc;
 
             transform.position = pos;
             yield return null;
@@ -144,6 +148,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private IEnumerator ExecuteAutoClimb(InteractableAction ia)
     {
+        print("Ejecutando escalada automática");
         if (!ia.climbTarget) yield break;
 
         Vector3 start = transform.position;
