@@ -8,10 +8,10 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [Header("Movement")]
-    public float moveSpeed;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float velocidadLimite;
 
 
-    private Keyboard keyboard;
 
     public float groundDrag;
     [Header("Ground Check")]
@@ -86,9 +86,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
 
-        if (flatVel.magnitude > moveSpeed)
+        if (flatVel.magnitude > velocidadLimite)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            Vector3 limitedVel = flatVel.normalized * velocidadLimite;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
     }

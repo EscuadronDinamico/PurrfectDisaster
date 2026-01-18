@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -49,6 +50,13 @@ public class CameraMove : MonoBehaviour
     private float horizontalVelocity = 0f;
     private float verticalVelocity = 0f;
 
+
+    [Header("Camaras disponibles")]
+    [Tooltip("Camara over the shoulder o en encima del hombro")]
+    [SerializeField] private CinemachineCamera OverTheShoulderCamera;
+    [Tooltip("Camara en tercera persona normal")]
+    [SerializeField] private CinemachineCamera camara3raPersona;
+
     // Input del nuevo Input System
     private Vector2 lookInput;
 
@@ -58,12 +66,14 @@ public class CameraMove : MonoBehaviour
     {
         playerInput.actions["Look"].performed += OnLook;
         playerInput.actions["Look"].canceled += OnLook;
+        playerInput.actions["CambioCamara"].performed += CambioCamara;
     }
 
     private void OnDisable()
     {
         playerInput.actions["Look"].performed -= OnLook;
         playerInput.actions["Look"].canceled -= OnLook;
+        playerInput.actions["CambioCamara"].performed -= CambioCamara;
     }
 
     void Start()
@@ -163,5 +173,23 @@ public class CameraMove : MonoBehaviour
     {
         // Leemos el input del jugador
         lookInput = context.ReadValue<Vector2>();
+    }
+
+    private void CambioCamara(InputAction.CallbackContext contexto)
+    {
+        float valorCamaraShoulder=OverTheShoulderCamera.Priority;
+        float valorCamara3raPersona=camara3raPersona.Priority;
+        if (valorCamaraShoulder> valorCamara3raPersona)
+        {
+            OverTheShoulderCamera.Priority = 9;
+            camara3raPersona.Priority = 10;
+        }
+        else
+        {
+            OverTheShoulderCamera.Priority = 10;
+            camara3raPersona.Priority = 9;
+        }
+        //cambio de prioridad de camaras
+
     }
 }

@@ -15,6 +15,8 @@ public class MenuPausaScript : MonoBehaviour
     {
         menuPausa.SetActive(false);
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     public void Salir()
     {
