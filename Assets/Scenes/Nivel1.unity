@@ -3138,6 +3138,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902930869}
   m_CullTransparentMesh: 1
+--- !u!1 &939450671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939450672}
+  - component: {fileID: 939450674}
+  - component: {fileID: 939450673}
+  m_Layer: 0
+  m_Name: TV
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939450672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939450671}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5536902, y: 4.2, z: 13.898174}
+  m_LocalScale: {x: 1.5, y: 0.7, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1451365369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939450673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939450671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a68fd970885a9f46be4008f017de105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionType: 2
+  promptText: "Acci\xF3n"
+  keyHint: E
+  pushTarget: {fileID: 0}
+  pushForce: 5
+  pushDirMode: 0
+  fixedPushDirection: {x: 0, y: 0, z: 1}
+  jumpTarget: {fileID: 0}
+  jumpArcHeight: 1.5
+  jumpDuration: 0.6
+  climbTarget: {fileID: 0}
+  climbDuration: 0.8
+  onInteract:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &939450674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939450671}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.7, z: 0}
 --- !u!1 &941987518
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,6 +4688,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370069353}
   m_CullTransparentMesh: 1
+--- !u!1 &1414961820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1414961821}
+  - component: {fileID: 1414961823}
+  - component: {fileID: 1414961822}
+  m_Layer: 0
+  m_Name: MesaCentro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1414961821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414961820}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5536902, y: 3.7, z: 15.898174}
+  m_LocalScale: {x: 1.5, y: 0.7, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1451365369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1414961822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414961820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a68fd970885a9f46be4008f017de105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionType: 1
+  promptText: "Acci\xF3n"
+  keyHint: E
+  pushTarget: {fileID: 0}
+  pushForce: 5
+  pushDirMode: 0
+  fixedPushDirection: {x: 0, y: 0, z: 1}
+  jumpTarget: {fileID: 0}
+  jumpArcHeight: 1.5
+  jumpDuration: 0.6
+  climbTarget: {fileID: 0}
+  climbDuration: 0.8
+  onInteract:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &1414961823
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414961820}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -0.7, z: 0}
 --- !u!1 &1418385068
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,6 +5001,8 @@ Transform:
   - {fileID: 116287284}
   - {fileID: 1480378456}
   - {fileID: 1642455635}
+  - {fileID: 939450672}
+  - {fileID: 1414961821}
   - {fileID: 1243859774}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5855,6 +6019,22 @@ PrefabInstance:
     - target: {fileID: 4044688386886914019, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
       propertyPath: IgnoreTimeScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509319716912107903, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9851471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509319716912107903, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1617614
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509319716912107903, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.05684495
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509319716912107903, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.009333955
       objectReference: {fileID: 0}
     - target: {fileID: 5045019474928173920, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
       propertyPath: m_Height
