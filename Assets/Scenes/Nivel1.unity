@@ -167,14 +167,14 @@ MonoBehaviour:
   actionType: 2
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -233,14 +233,14 @@ MonoBehaviour:
   actionType: 2
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -370,14 +370,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -506,14 +506,14 @@ MonoBehaviour:
   actionType: 2
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -835,14 +835,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -1132,14 +1132,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -1323,14 +1323,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -1368,7 +1368,7 @@ GameObject:
   - component: {fileID: 1115807283}
   - component: {fileID: 1115807282}
   m_Layer: 0
-  m_Name: Mueble1
+  m_Name: Mueble1 Salto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1386,7 +1386,9 @@ Transform:
   m_LocalPosition: {x: -0.072999716, y: 0, z: -0.72299993}
   m_LocalScale: {x: 1, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1264067102}
+  - {fileID: 1652976257}
   m_Father: {fileID: 281665620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1115807282
@@ -1404,14 +1406,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 1264067102}
+  actionEndPoint: {fileID: 1652976257}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -1637,14 +1639,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -1703,6 +1705,37 @@ Transform:
   - {fileID: 82038968}
   m_Father: {fileID: 1451365369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1264067101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264067102}
+  m_Layer: 0
+  m_Name: Punto A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1264067102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264067101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.421, y: -0.892, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115807281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1296396294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,14 +1784,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -1832,14 +1865,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -1997,14 +2030,14 @@ MonoBehaviour:
   actionType: 2
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -2093,14 +2126,14 @@ MonoBehaviour:
   actionType: 2
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -2179,14 +2212,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -2363,14 +2396,14 @@ MonoBehaviour:
   actionType: 0
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:
@@ -2396,6 +2429,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: -0.9, z: 0}
+--- !u!1 &1652976256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1652976257}
+  m_Layer: 0
+  m_Name: Punto B
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1652976257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652976256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115807281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1716052984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2671,7 +2735,81 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7490395636488387857, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1436865605}
+    - targetCorrespondingSourceObject: {fileID: 7490395636488387857, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1716052987}
+    - targetCorrespondingSourceObject: {fileID: 7490395636488387857, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1716052986}
   m_SourcePrefab: {fileID: 100100000, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+--- !u!114 &1716052985 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6739020702178120310, guid: 27aff8e72ed96b842b843bcebfe0633d, type: 3}
+  m_PrefabInstance: {fileID: 1716052984}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436865601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68256f027967de498ab14df0d35021a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1716052986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436865601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21d70db3694c064f973599e806123d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementControllerToDisable: {fileID: 1716052985}
+  promptUI: {fileID: 0}
+  rotateToTargetSpeed: 8
+  interactAction:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c3cc14ff-04d4-4556-8d98-d2fdcdb8bfb9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e6e63a5d-35d1-441f-9ed3-e4de099a109d
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interact
+      m_Flags: 0
+    m_Flags: 0
+--- !u!143 &1716052987
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436865601}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1751055259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2753,14 +2891,14 @@ MonoBehaviour:
   actionType: 1
   promptText: "Acci\xF3n"
   keyHint: E
+  actionStartPoint: {fileID: 0}
+  actionEndPoint: {fileID: 0}
   pushTarget: {fileID: 0}
   pushForce: 5
   pushDirMode: 0
   fixedPushDirection: {x: 0, y: 0, z: 1}
-  jumpTarget: {fileID: 0}
   jumpArcHeight: 1.5
   jumpDuration: 0.6
-  climbTarget: {fileID: 0}
   climbDuration: 0.8
   onInteract:
     m_PersistentCalls:

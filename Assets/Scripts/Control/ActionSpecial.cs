@@ -9,6 +9,10 @@ public class InteractableAction : MonoBehaviour
     [SerializeField] private string promptText = "Acción";
     [SerializeField] private string keyHint = "E";
 
+    [Header("Puntos de acción (OBLIGATORIOS)")]
+    public Transform actionStartPoint;
+    public Transform actionEndPoint;
+
     [Header("Empujar (Push)")]
     public Rigidbody pushTarget;
     public float pushForce = 5f;
@@ -17,12 +21,10 @@ public class InteractableAction : MonoBehaviour
     public Vector3 fixedPushDirection = Vector3.forward;
 
     [Header("Salto automático (AutoJump)")]
-    public Transform jumpTarget;
     public float jumpArcHeight = 1.5f;
     public float jumpDuration = 0.6f;
 
     [Header("Escalar automático (AutoClimb)")]
-    public Transform climbTarget;
     public float climbDuration = 0.8f;
 
     [Header("Interact (genérico)")]
@@ -34,7 +36,10 @@ public class InteractableAction : MonoBehaviour
         col.isTrigger = true;
     }
 
-    public string GetPromptText() => $"[{keyHint}] {promptText}";
+    public string GetPromptText()
+    {
+        return $"[{keyHint}] {promptText}";
+    }
 
     public Rigidbody GetPushBody()
     {
@@ -44,22 +49,32 @@ public class InteractableAction : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, 0.25f);
+        if (!actionStartPoint) return;
 
-        if (actionType == ActionType.AutoJump && jumpTarget)
+        
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(actionStartPoint.position, 0.15f);
+
+        
+        if (actionEndPoint)
         {
             Gizmos.color = Color.cyan;
-            Gizmos.DrawLine(transform.position, jumpTarget.position);
-            Gizmos.DrawSphere(jumpTarget.position, 0.1f);
+            Gizmos.DrawLine(actionStartPoint.position, actionEndPoint.position);
+            Gizmos.DrawSphere(actionEndPoint.position, 0.15f);
         }
 
-        if (actionType == ActionType.AutoClimb && climbTarget)
+        
+        if (actionType == ActionType.Push)
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, climbTarget.position);
-            Gizmos.DrawCube(climbTarget.position, Vector3.one * 0.1f);
+            Gizmos.color = Color.red;
+            Vector3 dir = pushDirMode == PushDirectionMode.UsePlayerForward
+                ? transform.forward
+                : fixedPushDirection.normalized;
+            Gizmos.DrawRay(actionStartPoint.position, dir);
         }
     }
 }
+
+
+
 
