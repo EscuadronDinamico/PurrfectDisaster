@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MenuCreditos.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Nivel1BACKUP2.0.unity
-    guid: d5acb896e130c9a4d9d8a7f7b63576ca
+    path: Assets/Scenes/Nivel1.unity
+    guid: 26ef07a8363f7ae47ba786b13d7955c9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
